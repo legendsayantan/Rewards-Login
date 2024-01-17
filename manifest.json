@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Rewards-Login",
+  "version": "1.0.0",
+  "description": "Companion extension to the Rewards app by legendsayantan",
+  "author": "legendsayantan@gmail.com",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Rewards-Login"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://rewards.bing.com/pointsbreakdown",
+        "https://rewards.bing.com/"
+      ],
+      "css": [],
+      "js": [
+        "Credential.js",
+        "extract.js"
+      ],
+      "world": "MAIN"
+    }
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://rewards.bing.com/*"
+    ]
+  },
+  "permissions": [
+    "tabs","cookies"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
