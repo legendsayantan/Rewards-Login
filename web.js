@@ -9,8 +9,7 @@ if(window.location.href.includes("bing.com")){
         injectHtml();
         rewards = document.cookie;
     }else{
-        var codeForRewards = 'document.body.appendChild(Object.assign(document.createElement("script"),{src:"https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@main/web.js"}));bing="'
-        +document.cookie+'"';
+        var codeForRewards = 'document.body.appendChild(Object.assign(document.createElement("script"),{src:"https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@main/web.js"}));setBing("'+document.cookie+'")';
         if (window.clipboardData && window.clipboardData.setData) {
             // IE: prevent textarea being shown while dialog is visible
             window.clipboardData.setData("Code for Rewards page", codeForRewards);
@@ -38,4 +37,7 @@ if(window.location.href.includes("bing.com")){
     }
 }else{
     alert("Not the correct page to use this.")
+}
+function setBing(cookies){
+    bing=cookies;
 }
