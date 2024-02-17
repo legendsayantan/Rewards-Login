@@ -23,5 +23,4 @@ document.body.appendChild(Object.assign(document.createElement("script"),{src:"h
 4. Open [Points Breakdown](https://rewards.bing.com/pointsbreakdown) in Desktop Mode.
 5. Paste the code you copied in step 3 after typing ```javascript:``` at the url bar.
 6. Click **Export to clipboard**
-7. Open **Rewards** app
-8. Copy the clipboard content, then click **Import** in the app.
+7. Open **Rewards** app and click "Import".
