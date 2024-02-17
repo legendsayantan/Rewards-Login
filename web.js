@@ -6,8 +6,8 @@ if(window.location.href.includes("bing.com")){
         var e2 = document.createElement("script"); 
         e2.setAttribute("src", "https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@main/extract.js");
         document.body.appendChild(e2);
-        rewards = document.cookie
         injectHtml();
+        rewards = document.cookie;
     }else{
         var codeForRewards = 'document.body.appendChild(Object.assign(document.createElement("script"),{src:"https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@main/web.js"}));bing="'
         +document.cookie+'"';
