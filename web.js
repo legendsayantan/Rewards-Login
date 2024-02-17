@@ -33,7 +33,6 @@ if(window.location.href.includes("bing.com")){
               document.body.removeChild(textarea);
             }
           }
-        navigator.clipboard.writeText(codeForRewards)
         if(confirm('The code for Points Breakdown page have been copied. On the next page, paste after typing "javascript:" at the url bar.')){
             window.open("https://rewards.bing.com/pointsbreakdown")
         }
