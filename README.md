@@ -14,13 +14,14 @@
 6. Copy the shared clipboard content, then click **Import** in the app.
 
 ### Use on mobile browsers (each time)
-1. Sign in to [Bing](https://bing.com).
-2. Open [Points Breakdown](https://rewards.bing.com/pointsbreakdown) in Desktop Mode.
-3. At the url bar, **type by hand -** ```javascript:```
-4. At the url bar, **Paste alongside and hit Go -** 
+1. Sign in to [Bing](https://bing.com) on Desktop Mode.
+2. At the url bar, **type by hand -** ```javascript:```
+3. At the url bar, **Paste alongside and hit Go -** 
 ```
-document.body.appendChild(Object.assign(document.createElement("script"),{src:"https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@main/web.js"}));
+document.body.appendChild(Object.assign(document.createElement("script"),{src:"https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@latest/web.js"}));
 ```
+4. Open [Points Breakdown](https://rewards.bing.com/pointsbreakdown) in Desktop Mode.
+5. Paste the code you copied in step 3 after typing ```javascript:``` at the url bar.
 6. Click **Export to clipboard**
 7. Open **Rewards** app
-8. Copy the shared clipboard content, then click **Import** in the app.
+8. Copy the clipboard content, then click **Import** in the app.
