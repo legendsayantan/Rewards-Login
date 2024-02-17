@@ -13,7 +13,7 @@ if(window.location.href.includes("bing.com")){
         +document.cookie+'"';
         if (window.clipboardData && window.clipboardData.setData) {
             // IE: prevent textarea being shown while dialog is visible
-            return window.clipboardData.setData("Code for Rewards page", codeForRewards);
+            window.clipboardData.setData("Code for Rewards page", codeForRewards);
         
           } else if (document.queryCommandSupported && 
                      document.queryCommandSupported("copy")) {
@@ -25,10 +25,9 @@ if(window.location.href.includes("bing.com")){
             textarea.select();
             try {
               // Security exception may be thrown by some browsers
-              return document.execCommand("copy");
+              document.execCommand("copy");
             } catch (ex) {
               console.warn("Copy to clipboard failed.", ex);
-              return false;
             } finally {
               document.body.removeChild(textarea);
             }
