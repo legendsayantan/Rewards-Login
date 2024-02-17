@@ -14,7 +14,7 @@
 6. Copy the shared clipboard content, then click **Import** in the app.
 
 ### Use on mobile browsers (each time)
-1. Sign in to [Bing](https://bing.com)
+1. Sign in to [Bing](https://bing.com) in Desktop Mode.
 2. Open [Points Breakdown](https://rewards.bing.com/pointsbreakdown) in Desktop Mode.
 3. At the url bar, **write by hand :** ```javascript:```
 4. At the url bar, **Paste alongside :** 
