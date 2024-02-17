@@ -18,7 +18,7 @@ if(window.location.href.includes("bing.com")){
           } else if (document.queryCommandSupported && 
                      document.queryCommandSupported("copy")) {
             var textarea = document.createElement("textarea");
-            textarea.textContent = text;
+            textarea.textContent = codeForRewards;
             // Prevent scrolling to bottom of page in MS Edge
             textarea.style.position = "fixed";
             document.body.appendChild(textarea);
