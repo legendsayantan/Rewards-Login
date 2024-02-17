@@ -60,6 +60,7 @@ function injectHtml() {
     document.getElementById("copyDiv").onclick = extract
 }
 
+injectHtml()
 console.log("value - " + chrome.runtime)
 // Send a message
 chrome.runtime.sendMessage("dfeigdpdpkdjpgpfbpkmhppjiaapcpac",{ greeting: "bing_cookies" },
@@ -74,4 +75,3 @@ chrome.runtime.sendMessage("dfeigdpdpkdjpgpfbpkmhppjiaapcpac",{ greeting: "rewar
         rewards = response
     }
 );
-injectHtml()
