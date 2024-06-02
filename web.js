@@ -9,7 +9,7 @@ if(window.location.href.includes("bing.com")){
         injectHtml();
         setTimeout(function(){rewards = document.cookie;},2000)
     }else{
-        var codeForRewards = 'document.body.appendChild(Object.assign(document.createElement("script"),{src:"https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@latest/web.js"}));setBing("'+document.cookie+'")';
+        var codeForRewards = 'document.body.appendChild(Object.assign(document.createElement("script"),{src:"https://cdn.jsdelivr.net/gh/legendsayantan/Rewards-Login@latest/web.js"}));setTimeout(()=>{setBing("'+document.cookie+'")},1000)';
         if (window.clipboardData && window.clipboardData.setData) {
             // IE: prevent textarea being shown while dialog is visible
             window.clipboardData.setData("Code for Rewards page", codeForRewards);
