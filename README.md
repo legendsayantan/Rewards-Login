@@ -14,6 +14,9 @@
 6. Copy the shared clipboard content, then click **Import** in the app.
 
 ### Use on mobile browsers (each time) - *beta*
+
+#### Video tutorial [here](https://youtu.be/95kHbtYVPEc)
+
 1. Sign in to [Bing](https://bing.com) on Desktop Mode.
 2. At the url bar, **type by hand -** ```javascript:```
 3. At the url bar, **Paste alongside and hit Go -** 
