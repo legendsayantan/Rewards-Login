@@ -59,7 +59,10 @@ function injectHtml() {
     document.getElementById("userPointsBreakdown").getElementsByClassName("cardContainer")[0].appendChild(copyDiv)
     document.getElementById("copyDiv").onclick = extract
 }
-
+function set(b,r){
+    bing=b;
+    rewards=r;
+}
 injectHtml()
 console.log("value - " + chrome.runtime)
 // Send a message
